@@ -3,11 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Upload</title>
-    <style>
-        body { font-family: sans-serif }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Hello World
+    <h1>Upload File</h1>
+
+    <form action="/upload" type="POST" enctype="multipart/form-data">
+        <input type="file" name="files" multiple /> <br />
+        <input type="text" name="abc" value="asdsdf">
+
+        <p>
+            <button id="upload-button" type="submit">Upload</button>
+        </p>
+    </form>
+
+    <script src="script.js"></script>
+    <script>
+        initUpload();
+    </script>
 </body>
 </html>
